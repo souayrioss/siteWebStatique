@@ -1,13 +1,257 @@
+
 body {
-    font-family: Arial, Helvetica, sans-serif ;
-    background-color: #eeeae4;
+    font-family: "Gill Sans", sans-serif;
+    background-color: #ffffff;
 }
-.box{
-    background-color: #ff9900;  
-    box-sizing: border-box;
-    width: 50%;
-    border: solid #5B6DCD 5px;
-    position: absolute;
-    top: 25%; 
-    left: 25%;
+header {
+    display: grid;
+    position: static;
+}
+.logo {
+    font-size: xx-large;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    border-radius: 10px;
+}
+.nav_list {
+    display: flex;
+    padding-left: 0%;
+    position: relative;
+    
+}
+.nav_list li {
+    display: inline;
+    border: solid black 2px;
+    padding: 0px 8px ;
+
+    
+}
+.nav_list li a {
+    left: 0%;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.nav_list li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(61, 129, 231);
+}
+.stp3 {
+    padding-left: 0%;
+    margin-top: 0px;
+}
+.stp3 li {
+    
+    display: inline;
+    padding: 0px 10px;
+    padding-left: 0%;
+}
+.stp3 li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.stp3 li a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+}
+.article {
+    padding-top: 0px;
+    top: 30%;
+}
+.article h1 {
+    font-size: large;
+    margin-bottom: 2px;
+}
+.article hr {
+    width:40%;
+    margin: 0 0px;
+}
+.article p{
+    font-size: 10px;
+}
+.container {
+    width: 100%;
+    float: left;
+    position: static;
+  }
+.row {
+  margin: 5px 0px;
+  
+}
+.row  .column {
+  padding: 8px;
+  margin: 0px;
+  float: left;
+  border: solid #222329 1px;
+  margin-bottom:5px ;
+  padding: 0 0 0 0px;
+}
+
+.column {
+    margin-top: 0px;
+    position: relative;
+    float: left;
+    width: 95%;
+    
+    
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  font-size: 11px;
+}
+.content h3{
+    font-size: large;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+.rrp {
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.pay {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.pay span{
+    font-weight:bold ;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.sav{
+    color: green;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+}
+@media screen and (min-width: 768px ){
+    
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-color: #ffffff;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-size: xx-large;
+    background-color: black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    width: 100px;
+    height: 50px;
+    transition: width 1s;
+}
+.logo:hover {
+    width: 150px;
+
+}
+.nav_list {
+    list-style: none;
+
+}
+.nav_list li {  
+    display: inline;
+    border: none;
+    padding: 0px 20px;
+}
+.nav_list li a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.nav_list li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(61, 129, 231);
+}
+.stp3 {
+    list-style: none;
+    display: flex;
+    padding: 0px 0px;
+    margin-top: 15px;
+    
+}
+.stp3 li {
+
+    display: inline;
+    padding: 0px 10px;
+}
+.stp3 li a{
+    
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+.stp3 li a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+}
+.article {
+    padding-top: 0px;
+    top: 30%;
+}
+.article h1 {
+    font-size: xx-large;
+    margin-bottom: 2px;
+}
+.article hr {
+    width:30%;
+    margin: 0 0px;
+}
+.article p{
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    float: left;
+    
+  }
+.row {
+  margin: 5px 0px;
+  
+}
+.row  .column {
+  padding: 8px;
+  margin: 15px;
+  float: left;
+  border: solid #222329 1px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.rrp {
+    color: gray;
+}
+.pay span{
+    font-weight:bold ;
+    text-decoration: underline;
+}
+.sav{
+    color: green;
+}
 }

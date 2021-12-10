@@ -1,80 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Hello</title>
         <meta name="description" content="Acheter de jeux de notre grande sélection. Jouer à la demande.">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <p class="logo">Logo</p>
-            <nav>
-                <ul class="nav_list">
-                    <li><a href="#">Video to rent</a></li>
-                    <li><a href="#">Video to buy</a></li>
-                    <li><a href="#">Used DVDs</a></li>
-                    <li><a href="#">Offers</a></li>
-                </ul>
-            </nav>
+           <img  class="logo" src="logo.svg" alt="logo">
         </header>
-        <section>
-            <div >
-                <ol class="stp3">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">Used DVDs</a></li>
-                    <li><a href="#">less then 10$</a></li>
-                </ol>
-            </div>
-            <div class="article">
-                <h1>Video less then 10$</h1>
-                <hr>
-                    <p>L'élément représente une composition autonome dans un document, une page, une application 
-                        ou un site, destinée à être distribuée ou réutilisée de manière indépendante.</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="column">
-                        <div class="content">
-                            <img src="product-img1.png" alt="product" style="width:100%">
-                            <h3>Title video 1</h3>
-                            <p class="rrp">RRP:£18.99</p>
-                            <p class="pay">Price your pay <span>£9.99</span></p>
-                            <p class="sav">you saving £9</p>
-                        </div>
+        <article>
+            <h1>Trouver Votre <span> Futur </span> Logement </h1>
+            
+            <p class="par">Plus de INFINI lots de gestion sur centre GALAXI de PLUTO.<br> Un suivi complet et sans frais supplémentaires. Garantie des <br>Loyers Impayés possible. Un suivi juridique. Accompagnement<br> personnalisé pour chaque propriétaire ou locataire. Gestion des <br>appels du syndic.
+                Reception des loyers sans se soucier des <br>problèmes, nous nous occupons de tout.</p>
+        </article>
+        <section class="form">
+                <img class="imgser" src="house.svg">
+                <div class="ipt">
+                    <div class="content" >
+                        <input type="text" placeholder="Rayon de recherche" >           
                     </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="product-img2.png" alt="product" style="width:100%">
-                            <h3>Title video 2</h3>
-                            <p class="rrp">RRP:£18.99</p>
-                            <p class="pay">Price your pay <span>£9.99</span></p>
-                            <p class="sav">you saving £9</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="product-img3.png" alt="product" style="width:100%">
-                            <h3>Title video 3</h3>
-                            <p class="rrp">RRP:£18.99</p>
-                            <p class="pay">Price your pay <span>£9.99</span></p>
-                            <p class="sav">you saving £9</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <img src="product-img4.png" alt="product" style="width:100%">
-                            <h3>Title video 4</h3>
-                            <p class="rrp">RRP:£18.99</p>
-                            <p class="pay">Price your pay <span>£9.99</span></p>
-                            <p class="sav">you saving £9</p>
-                        </div>
+                    <div class="content" >
+                        <select  name="categorie" v>
+                            <option value="Type de propriété">Type de propriété</option>
+                            <option value="Maison">Maison</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Appartement">Appartement</option>
+                            <option value="Bureau">Bureau</option>
+                        </select>           
                     </div>
                 </div>
-            </div>
+                <div class="content"  >
+                    <input type="text" placeholder="Nombre du chambre" >           
+                </div>
+                <div class="content"  >
+                    <input type="range"  min="0" max="1100">
+                </div>
+                <div class="vend" style="border-radius: 30px;">
+                    <input type="checkbox" id="vendues ">  
+                    <label for="les propriétés vendues ">les propriétés vendues</label>       
+                </div>
+                    <button class="btn"><a href="#">Chercher</a></button>       
+                
         </section>
-        <footer></footer>
     </body>
 </html>
